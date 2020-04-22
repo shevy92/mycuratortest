@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Closet- View all</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugin/sidebar-menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Search Overlay Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
+        <form role="search" id="searchform" action="/search" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        </form>
+    </div>
+    <!-- End Search Overlay Menu -->
+
+    <!-- Sidemenu -->
+    <section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
+        <a id="menu-sidebar-close-icon" class="menu-close"><i class="ion ion-android-close"></i></a>
+        <h5 class="white">Sign In</h5>
+        <div class="sign-in">
+            <input class="input-sm form-full" type="email" aria-required="true" id="email" name="email" placeholder="Email" value="" />
+            <input class="input-sm form-full" type="password" aria-required="true" id="password" name="password" placeholder="Password" value="" />
+            <input type="submit" class="btn btn-md btn-color-b form-full" value="Sign In" />
+            <a>New Customer?</a>
+        </div>
+        <ul>
+            <li><a class="all-demos-link" target="_blank" href="../demo.html">Main Demo Page</a></li>
+            <li><a href="home.html">Home Default</a></li>
+            <li><a href="portfolio-grid-2col.html">Portfolio</a></li>
+            <li><a href="login-register.html">Login & Signup</a></li>
+            <li><a href="faq-1.html">FAQ</a></li>
+            <li><a href="about-1.html">About</a></li>
+            <li><a href="service-1.html">Service</a></li>
+            <li><a href="blog-grid-3col.html">Blog</a></li>
+            <li><a href="404-error-1.html">404 Error</a></li>
+            <li><a href="shop-checkout.html">Shopping Cart</a></li>
+            <li><a href="contact-1.html">Contact Us</a></li>
+        </ul>
+    </section>
+    <!--End Sidemenu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="header header-light">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html#closet">
+                        <img class="logo-light" src="images/icons/logo_white.png" alt="Mazel" />
+                        <img class="logo-dark" src="images/icons/logo_black.png" alt="Mazel" />
+                    </a>
+                </div>
+                
+                <h4><a href="index.html#closet" style="text-align: right; padding-right: 2% !important; position: absolute; right: 0; top: 20px; z-index: 1000;">Back</a></h4>
+                <!-- End Logo -->
+
+                <!-- Rightside Menu (Search, Cart, Bart icon) 
+                <div class="side-menu-btn">
+                    <ul>
+                        
+                        <li class="">
+                            <a class="search-overlay-menu-btn header-icon"><i class="fa fa-search"></i></a>
+                        </li>
+
+                        
+                        <li class="cart">
+                            <a class="header-icon" href="shop-checkout.html">
+                                <i class="fa fa-shopping-cart"></i>
+                                <div class="cart-notification-wrap"><span class="cart-notification">2</span></div>
+                            </a>
+                            
+                            <div class="cart-dropdown">
+                                <ul class="cart-list">
+                                    <li class="light-color">
+                                        <a class="close-cart-list"><i class="fa fa-times-circle"></i></a>
+                                        <div class="media">
+                                            <a class="pull-left">
+                                                <img src="img/product/02.jpg" alt="fashion" /></a>
+                                            <div class="media-body">
+                                                <h6><a>Fashion Model New /01</a></h6>
+                                                <p>$399.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="light-color">
+                                        <a class="close-cart-list"><i class="fa fa-times-circle"></i></a>
+                                        <div class="media">
+                                            <a class="pull-left">
+                                                <img src="img/product/06.jpg" alt="fashion" /></a>
+                                            <div class="media-body">
+                                                <h6><a>Fashion Model New /02</a></h6>
+                                                <p>$399.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="cart-sub-totle"><span class="pull-left">Cart Subtotal</span><span class="pull-right totle"><strong>$798.00</strong></span></p>
+                                <div class="clearfix"></div>
+                                <div class="cart-checkout-btn">
+                                    <a href="shop-checkout.html" class="btn btn-md btn-color-b form-full checkout">Checkout</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="">
+                            <a id="menu-sidebar-list-icon" class="nav-bar-icon"><span></span></a>
+                        </li>
+                    </ul>
+                </div>
+                End Rightside Menu -->
+
+                <!-- Mobile Navbar Icon 
+                <div class="nav-mobile nav-bar-icon">
+                    <span></span>
+                </div>-->
+                <!-- End Mobile Navbar Icon -->
+
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+        
+        <!-- Closet Section -->
+        <section id="closet" class="wow fadeInUp ptb ptb-sm-80 text-center">
+            <div class="container">
+                <h3>My Closet</h3>
+                <div class="spacer-30"></div>
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter mb-0">
+                        <li><a class="categories active" data-filter="*">All</a></li>
+                        <li><a class="categories" data-filter=".accessories">Accessories</a></li>
+                        <li><a class="categories" data-filter=".tops">Tops</a></li>
+                        <li><a class="categories" data-filter=".bottoms">Bottoms</a></li>
+                        <li><a class="categories" data-filter=".dresses">Dresses</a></li>
+                        <li><a class="categories" data-filter=".shoes">Shoes</a></li>
+                        <li><a class="categories" data-filter=".outerwear">Outerwear</a></li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+            </div>
+            <!-- Work Gallary -->
+            <div class="container">
+                <div class="row container-grid nf-col-3">
+                    <div class="nf-item branding dresses spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/1.jpg" title="Consequat massa quis">
+                                <img class="item-container" src="img/portfolio/1.jpg" alt="1" />
+                                <div class="item-mask">
+                                    
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">BLACK DORA DRESS WITH TRUMPET SLEEVES</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/2.jpg" title="Vivamus elementum semper">
+                                <img class="item-container" src="img/portfolio/2.jpg" alt="2" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">SHIRLEY STRIPED LARGE CLUTCH</h5>
+                                        <p class="white" style="font-size: 0.6em;">$325.00 
+                                            <br>Item# CW73507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item tops spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/3.jpg" title="Quisque rutrum">
+                                <img class="item-container" src="img/portfolio/3.jpg" alt="4" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">PASHA BELL SLEEVE CREW NECK TOP</h5>
+                                        <p class="white" style="font-size: 0.6em;">$295.00 
+                                            <br>Item# CW73507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item bottoms spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/4.jpg" title="Tellus eget condimentum">
+                                <img class="item-container" src="img/portfolio/4.jpg" alt="4" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Stacey bell</h5>
+                                        <p class="white" style="font-size: 0.6em;">$198.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/5.jpg" title="Nullam quis ant">
+                                <img class="item-container" src="img/portfolio/5.jpg" alt="5" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Stacey Sunglasses</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>6/1/16
+                                            <br>Saks- New York City
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/6.jpg" title="Sed fringilla mauris">
+                                <img class="item-container" src="img/portfolio/6.jpg" alt="6" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item shoes spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/7.jpg" title="Augue velit cursus">
+                                <img class="item-container" src="img/portfolio/7.jpg" alt="7" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/8.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/8.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nf-item dresses spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/9.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/9.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/10.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/10.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item outerwear spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/11.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/11.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item bottoms spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/12.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/12.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item accessories spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/13.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/13.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item dresses spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/14.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/14.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="nf-item shoes spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/15.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/15.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nf-item dresses spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/16.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/16.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nf-item shoes spacing">
+                        <div class="item-box">
+                            <a class="cbox-gallary1" href="img/portfolio/17.jpg" title="Donec sodales sagittis">
+                                <img class="item-container" src="img/portfolio/17.jpg" alt="8" />
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" style="font-size: 0.8em;">Item Description</h5>
+                                        <p class="white" style="font-size: 0.6em;">$485.00 
+                                            <br>Item# 6203507BLK
+                                            <br>4/21/16
+                                            <br>Saks- Los Angeles
+                                        </p>
+                                    </div>
+                                    <i class="ion ion-android-share" style="color: white; position: absolute; right: 5px; top: 5px;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+          
+        </section>
+        <!-- End Closet Section -->
+
+
+        <!-- End CONTENT ------------------------------------------------------------------------------>
+
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="js/plugin/sidebar-menu.js" type="text/javascript"></script>
+    <script src="js/theme.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+
+
+</body>
+</html>
